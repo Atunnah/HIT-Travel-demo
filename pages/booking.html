@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>HIT-Travel</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div id="Header">
+      <div class="container">
+          <div class="header-main flex">
+              <a href="../index.html">
+                  <img src="./img/logo.jpg" alt="HIT travel">
+              </a>
+              <div class="navbar-collapse flex">
+                  <div class="navbar flex">
+                      <ul class="nav-list flex">
+                          <li class="nav-item">
+                              <a href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./about.html">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./Tour_List.html">Tours</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./Destinations.html">Destinations</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./Blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="./contact.html">Contact Us</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="booking-button">
+                      <a href="./booking.html">
+                          Booking Now
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+    <!--Scroll up-->
+    <a href="#" class="scrollup">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!--Main-->
+    <main id="main">
+      <section
+        class="small-banner"
+        style="
+          background: url(../img/sub-page.png);
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="banner-content">
+                <h2>Booking</h2>
+                <nav aria-label="small">
+                  <ol class="small">
+                    <li class="small-item">
+                      <a href="../index.html">Home</a>
+                    </li>
+                    <li class="small-item active">/ Booking</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing booking">
+        <div class="container">
+          <div class="row">
+            <div class="booking-bg">
+              <form action="" class="row g-3">
+                <div class="col-sm-12">
+                  <h2 class="form-hader">Book This Tour</h2>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control booking-from"
+                    id="inputAddress"
+                    placeholder="Enter your name"
+                    style="font-size: 16px !important;"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Enter email address"
+                    style="font-size: 16px !important;"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <select id="country" class="choose-option form-select">
+                    <option selected>Country</option>
+                    <option value="">Viet Nam</option>
+                    <option value="">United States</option>
+                    <option value="">France</option>
+                    <option value="">UK</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group date">
+                      <input id="myID" placeholder="Date to" class="form-control" style="width: 554px !important; background-color: #fff !important; font-size: 16px !important;">                  
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <select                    
+                    id="date_to"
+                    class="choose-option form-select"                
+                  >
+                    <option selected>Choose time</option>
+                    <option value="">6:00 PM</option>
+                    <option value="">7:00 PM</option>
+                    <option value="">8:00 PM</option>
+                  </select>          
+                </div>
+                <div class="col-md-6">
+                  <select                    
+                    id="guest"
+                    class="choose-option form-select"                  
+                  >
+                    <option value="" selected>Guests</option>
+                    <option value="">Guests 1</option>
+                    <option value="">Guests 2</option>
+                    <option value="">Guests 3</option>
+                  </select>                
+                </div>
+                <div class="col-md-12">
+                  <p class="from-text">Add Extra</p>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="gridCheck"
+                    />
+                    <label for="gridCheck" class="form-check-label">
+                      Service per booking
+                      <span class="booking-price">$50.00</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="gridCheck1"
+                    />
+                    <label for="gridCheck1" class="form-check-label">
+                      Service per person</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <span class="service-price">Adult: $50</span>
+                    <span class="service-price">Youth: $55</span>
+                    <span class="service-price">Children: $30</span>
+                  </p>
+                </div>
+                <div class="col-12">
+                  
+                    <a href class="btn btn-primary booking-bt" style="margin-bottom: 20px;">Booking now</a>            
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="faq">
+              <div class="col-md-12">
+                <h2 class="faq-hedar">Frequently Asked Question</h2>
+                <div class="accordion accordion-flush" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button collaped"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"                        
+                        aria-controls="collapseOne"
+                      >
+                        <p>How to book the new tour for 2 persons?</p>                      
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <p class="card-body">
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"                    
+                        aria-controls="collapseTwo"
+                      >
+                        <p>Why are your tours so expensive?</p>                        
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <p class="card-body">
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"                     
+                        aria-controls="collapseThree"
+                      >
+                        <p>Which payment methods are acceptable?</p>                      
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <p class="card-body">
+                        Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going to use a passage of lorem
+                        Ipsum you need to be sure there isn't anything.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer id="footer">
+      <div class="container">
+          <div class="row flex">
+              <div class="col1">
+                  <div class="footer-widget">
+                  <h5>Top destination</h5>
+                  <ul>
+                      <li><a href="./Tour_Detail.html">Indonesia, Jakarta</a></li>
+                      <li><a href="./Tour_Detail.html">Maldives, Malé</a></li>
+                      <li><a href="./Tour_Detail.html">Australia, Canberra</a></li>
+                      <li><a href="./Tour_Detail.html">Thailand, Bangkok</a></li>
+                      <li><a href="./Tour_Detail.html">Morocco, Rabat</a></li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="col2">
+                  <div class="footer-widget">
+                  <h5>Categories</h5>
+                  <ul>
+                      <li><a href="">Travel</a></li>
+                      <li><a href="">Lifestyle</a></li>
+                      <li><a href="">Fashion</a></li>
+                      <li><a href="">Education</a></li>
+                      <li><a href="">Morocco, Rabat</a></li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="col2">
+                  <div class="footer-widget">
+                      <h5>Quick links</h5>
+                      <ul>
+                          <li><a href="./about.html">About</a></li>
+                          <li><a href="./contact.html">Contact</a></li>
+                          <li><a href="./Tour_List.html">Tours</a></li>
+                          <li><a href="./booking.html">Booking</a></li>
+                          <li><a href="">Terms & Conditions</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col3">
+                  <div class="footer-widget">
+                      <h5>Get a newsletter</h5>
+                      <p>For the latest deals and tips, travel no further than your inbox</p>
+                      <form action="" class="subcribe-form">
+                          <input type="text" class="form-control" placeholder="Email address">
+                          <button type="submit">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-5">
+              <div class="col-lg-9 col-md-8">
+                  <div class="footer-left">
+                      <img src="./img/logo.jpg" alt="">
+                      <div class="h-border"></div>
+                      <div class="copyright">
+                          <p>© 2023 All Right Reserved</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="social flex">
+                  <ul class="team-social footer-social flex">
+                      <li class="share-icon">
+                          <a href="#">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                      </li>
+                      <li class="share-icon">
+                          <a href="#">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                      </li>
+                      <li class="share-icon">
+                          <a href="#">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                      </li>
+                      <li class="share-icon">
+                          <a href="#">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </li>
+                      <li class="share-icon">
+                          <a href="#">
+                              <i class="fab fa-google-plus-g"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#myID", {
+        // altInput: true,
+        // altFomart: "F j, Y",
+        dateFomart: "d-m-Y"
+      });
+    </script>
+  </body>
+</html>
